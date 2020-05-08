@@ -2,7 +2,7 @@
 
 The app allows the user to upload a picture of a number from 0-9 and it can determine what number is in the picture. 
 
-## How we built it
+## How it was built
 
 The AI model was trained through Keras and Tensorflow and the data used was from the Mnist dataset. 
 
