@@ -8,11 +8,6 @@ The AI model was trained through Keras and Tensorflow and the data used was from
 
 The frontend is built with Flask, and HTML/CSS
 
-## Setup guide
-
-To run this web app locally, after cloning our repository you will want to set up a virtual environment. Inside that venv make sure to install the latest versions of keras and tensorflow along with the other dependencies listed in requirements.txt.
-
-
 ## How it looks 
 
 Images can be found under the Digit_Recognition folder at Digit_Recognition/Homescreen.JPG, Digit_Recognition/Predict2.JPG, Digit_Recognition/Predict7.JPG
