@@ -15,16 +15,10 @@ To run this web app locally, after cloning our repository you will want to set u
 
 ## How it looks 
 
-<p align="center">
-  <img src="Digit_Recognition/Homescreen.jpg" width="720">
-</p>
+Images can be found under the Digit_Recognition folder at Digit_Recognition/Homescreen.JPG, Digit_Recognition/Predict2.JPG, Digit_Recognition/Predict7.JPG
 
-<p align="center">
-  <img src="Digit_Recognition/Predict7.jpg" width="720">
-</p>
+## Credits 
 
-<p align="center">
-  <img src="Digit_Recognition/Predict2.jpg" width="720">
-</p>
+This project was inspired by my friends: Michael He (https://github.com/BATMOOSEMIKE), Kevin Fan and Wenfei. We worked on a similar project together called the Clothing Classifier in early March and I decided to recreate the machine learning model with a different dataset while using a similar front-end layout. 
 
 
