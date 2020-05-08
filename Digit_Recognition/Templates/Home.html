@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digit Recognizer</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+    <header class = "head">
+        <nav class = "wrapper">
+            <div class = "topnav">
+                <a href = "/" class ="digit">Digit Recognizer</a>
+            </div>
+        </nav>
+    </header>
+    <div class = "background">
+        <div class = "submit">
+            <h1 class = "text">Submit a Picture of a Number</h1>
+        </div>
+    </div>
+    <div>
+        <form class = "myform" action="/predict" method="POST" enctype="multipart/form-data" id="form">
+            <div class = "image-preview" id="imagePreview">
+                <img src="" class = "image-preview_image">
+                <span class="image-preview_text">Image Preview</span>
+            </div>
+            <input class = "upload-btn" type="file" accept="image/*"  id="myfile" name="myfile"/>
+            <div>
+                <div class="submit-btn-wrap">
+                    <button class = "submit-btn" type="submit">Submit</button>
+                </div>
+             </div>
+        </form>
+
+
+        <br>
+        <br>
+        <div><p>{{prediction_text}}</p></div>
+    </div>
+    <div>
+        <script>
+            const myfile = document.getElementById("myfile");
+            const previewContainer = document.getElementById("imagePreview");
+            const previewImage = previewContainer.querySelector(".image-preview_image");
+            const previewDefaultText = previewContainer.querySelector(".image-preview_text");
+
+            myfile.addEventListener("change", function() {
+                const file = this.files[0];
+
+                if (file) {
+                    const reader = new FileReader();
+
+                    previewDefaultText.style.display = "none";
+                    previewImage.style.display = "block";
+
+                    reader.addEventListener("load", function(){
+                        previewImage.setAttribute("src", this.result);
+                    });
+
+                    reader.readAsDataURL(file);
+                }
+            });
+        </script>
+    </div>
+</body>
+</html>
