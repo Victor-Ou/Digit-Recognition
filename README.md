@@ -1,6 +1,6 @@
 ## What it does
 
-The app allows the user to upload a picture of a number from 0-9 and it can determine what number is in the picture. 
+The app allows the user to upload a picture of a number from 0-9 and it can determine what number is in the picture. The model was trained to around 94% accuracy.
 
 ## How it was built
 
@@ -14,7 +14,7 @@ To run this program locally after copying the repository, a virtual environment 
 
 ## How it looks 
 
-Images can be found under the Digit_Recognition folder at Digit_Recognition/Homescreen.JPG, Digit_Recognition/Predict2.JPG, Digit_Recognition/Predict7.JPG
+Images can be found under the Digit_Recognition folder at Digit_Recognition/Homescreen.JPG, Digit_Recognition/Predict2.JPG, Digit_Recognition/Predict7.JPG. These 2 pictures are just examples of how the works, in reality, it can predict any number from 0-9. 
 
 ## Credits 
 
