@@ -6,7 +6,7 @@ The app allows the user to upload a picture of a number from 0-9 and it can dete
 
 The AI model was trained through Keras and Tensorflow and the data used was from the Mnist dataset. 
 
-The frontend is built with Flask, and HTML/CSS
+The frontend is built with Flask, and HTML/CSS/JS
 
 ## Setup 
 
